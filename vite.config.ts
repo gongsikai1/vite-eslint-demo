@@ -16,12 +16,12 @@ export default defineConfig({
   },
   plugins: [
     vue(),
-    // eslintPlugin({
-    //   cache: false,
-    //   include: ['src/**/*.ts', 'src/**/*.vue', 'src/*.vue'],
-    //   // overrideConfigFile: './tsconfig.eslint.json' // 添加类型声明参数
-    //   // overrideConfigFile: tsconfig // 添加类型声明参数
-    // }),
+    eslintPlugin({
+      cache: false,
+      include: ['src/**/*.ts', 'src/**/*.vue', 'src/*.vue'],
+      // overrideConfigFile: './tsconfig.eslint.json' // 添加类型声明参数
+      // overrideConfigFile: tsconfig // 添加类型声明参数
+    }),
     vueJsx(),
     vueDevTools(),
   ],
