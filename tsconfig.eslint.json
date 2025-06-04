@@ -1,0 +1,22 @@
+// tsconfig.eslint.json
+
+{
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/views/**/*.vue",  // 使用正斜杠确保跨平台兼容
+    "tests/**/*.ts",
+    "types/**/*.d.ts",
+    "vite.config.ts",
+    "src/views/HomeView.vue"  // 显式包含确保匹配
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}
